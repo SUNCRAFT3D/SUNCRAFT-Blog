@@ -136,9 +136,12 @@ aside:
       img: /img/logo.png # url
       sticker: # url, 24x24 size
     # 介绍 / Introduction
-    description: 只有迎风，风筝才能飞得更高。
+    description: 想到什么就去动手做，把脑子里的想法变成真实的东西。
     # 内容 / Content
-    content: 这是我的博客 / This is my Blog
+    content: 欢迎来到我的主页 ，一个分享开源、作品设计的平台。
+    # 描述图片 / Description image
+    image: https://bu.dusays.com/2026/04/17/69e1d17617306.png # /img/your-image.jpg
+    # 状态 / State
     state:
       morning: ✨ 早上好，新的一天开始了
       noon: 🍲 午餐时间
@@ -146,14 +149,18 @@ aside:
       night: 早点休息
       goodnight: 晚安 😴
     witty_words:
-      # - 你可以的
-      # - 你一定可以的
-      # - 祝你好运，陌生人
+      - 今天也在好好撑着，就很棒了
+      - 允许自己慢一点，没关系
+      - 不完美也没关系，先做起来再说
+      - 先解决问题，再谈感受
+      - 别内耗，动手比什么都强
+      - 慢慢来，也比原地踏步好
     # social
     # 社交信息图标
     information:
-      #  Github: https://github.com/everfu || fab fa-github # Name: link || icon
-      Bilibili: https://space.bilibili.com/76034817 || fab fa-bilibili
+      Github: https://github.com/everfu || https://cdn.simpleicons.org/github/00000 # Name: link || icon
+      Bilibili: https://space.bilibili.com/76034817 || https://cdn.simpleicons.org/bilibili/00A1D6
+      MakerWorld: https://makerworld.com.cn/zh/@sunny_robo/upload || https://cdn.simpleicons.org/bambulab/00AE42
   # --------------------------- end ---------------------------
 
   # --------------------------- start ---------------------------
@@ -169,11 +176,11 @@ aside:
   # Tags
   # 标签
   tags:
-    enable: false
-    limit: 20 # Number of tags displayed
-    # Highlighted tags
+    enable: true
+    limit: 20 # 显示的标签数量
+    # 高亮标签
     highlight_list:
-      # - Hexo
+      - Hexo
   # --------------------------- end ---------------------------
 
   # --------------------------- start ---------------------------
@@ -280,8 +287,8 @@ post:
   # Reward
   # 打赏
   award:
-    enable: false
-    appreciators: /about/ # Reward page
+    enable: true
+    appreciators: /about/ # 打赏页面
     # Reward Title
     # 打赏标题
     title: # Thanks for your appreciation. / 感谢您的赞赏
@@ -332,7 +339,7 @@ post:
 # Custom Theme Color
 theme_color:
   dark: "#64dd17" # dark
-  light: "#ef6c00" # light
+  light: "#ff8f00" # light
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------

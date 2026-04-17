@@ -9,6 +9,9 @@
                 .sticker
                     img.sticker-img(src=theme.aside.my_card.author.sticker, alt=_p('aside.sticker'))
         .description!= theme.aside.my_card.content
+        if theme.aside.my_card.image
+            .description-image
+                img(src=theme.aside.my_card.image, alt="Description Image")
         .bottom-group
             span.left
                 .name= config.author
@@ -17,4 +20,9 @@
                 each value, label in theme.aside.my_card.information || {}
                     - var array = value.split('||')
                     a.social-icon(href=url_for(trim(array[0])), title=label)
-                        i.solitude(class=array[1])
+                        - var icon = trim(array[1])
+                        - var isImage = icon.match(/^https?:\/\//) || icon.match(/\.(png|jpg|jpeg|gif|svg|webp)$/i)
+                        if isImage
+                            img(src=icon, alt=label)
+                        else
+                            i.solitude(class=icon)

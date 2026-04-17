@@ -13,13 +13,14 @@
   .image
     position absolute
     right -40px
-    bottom -10rem
-    transition transform 2s cubic-bezier(.13, .45, .21, 1.02)
+    bottom -16rem
+    transition transform 1s cubic-bezier(.13, .45, .21, 1.02)
     user-select none
+    transform scale(0.5)
 
     +maxWidth768()
       right -70px
 
   &:hover
     .image
-      transform rotate(-10deg)
+      transform rotate(-15deg) scale(0.7)

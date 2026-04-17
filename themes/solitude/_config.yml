@@ -137,6 +137,8 @@ aside:
     description: 只有迎风，风筝才能飞得更高。
     # 内容 / Content
     content: # 这是我的博客 / This is my Blog
+    # 描述图片 / Description image
+    image: # /img/your-image.jpg
     state:
       morning: ✨ 早上好，新的一天开始了
       noon: 🍲 午餐时间

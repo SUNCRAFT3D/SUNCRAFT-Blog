@@ -29,7 +29,7 @@ if site.data.about.rewardList && site.data.about.award.enable
                             ul.reward-all
                                 span.reward-title= theme.post.award.title
                                 ul.reward-group
-                                    - var rewards = theme.post.award.list
+                                    - var rewards = theme.post.award.list || []
                                     each reward in rewards
                                         li.reward-item
                                             a(href=url_for(reward.url))
