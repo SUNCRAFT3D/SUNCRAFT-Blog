@@ -153,10 +153,10 @@ likes:
 
 # 网站统计数据展示模块
 tj: # 统计
-  provider: custom # 值为 51la（51la网站统计）或 custom（自建统计）
-  url: https://umami-api.holyfox.net/ # 需要到51la官网注册自行获取 or 自行搭建 Heo 的 百度统计项目，填写访问地址即可
+  provider: 51la # 值为 51la（51la网站统计）或 custom（自建统计）
+  url: https://v6-widget.51.la/v6/3Q3ezaK9JWZKfLpr/quote.js # 需要到51la官网注册自行获取 or 自行搭建 Heo 的 百度统计项目，填写访问地址即可
   img: https://i.p-i.vip/33/20250725-6883987819a97.webp # 背景
-  desc: 本站采用自建数据统计
+  desc: 本站采用51.la网站统计
 
 # 个人信息模块
 oneself: # 按需填写
@@ -190,17 +190,17 @@ tenyear:
 
 # 打赏列表
 award:
-  enable: true
+  enable: false
   description: 感谢赞赏的人，因为你们，让我感受到写博客这件事情能够给你们创造了价值。这会让我在这条路上走得更远。
   tips: 总金额：¥ {sum}，将全部用于博客的维护和更新。 # 必须带 {sum}，否则无法显示总金额
 rewardList: # 底部捐赠
-  - name: "❖星港◎Star☆"
-    money: 100
+  - name: "❖放手☆"
+    money: 5
     time: 2025-01-01
     icon: fab fa-weixin
     color: "#09bb07"
-  - name: "沫塔尔猫"
-    money: 100
+  - name: "柒夏小曦"
+    money: 20
     time: 2025-01-01
     icon: fab fa-alipay
     color: "#1677FF"

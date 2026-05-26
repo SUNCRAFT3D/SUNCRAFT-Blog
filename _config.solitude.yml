@@ -37,7 +37,7 @@ nav:
   # Menu
   # 菜单
   menu:
-    首页: / # name: link
+    # 首页: / # name: link
     文章: # name
       归档: /archives/ || fas fa-folder-closed # item name: link || icon
       分类: /categories/ || fas fa-clone
@@ -158,7 +158,7 @@ aside:
     # social
     # 社交信息图标
     information:
-      Github: https://github.com/everfu || https://cdn.simpleicons.org/github/00000 # Name: link || icon
+      Github: https://github.com/SUNCRAFT3D || https://cdn.simpleicons.org/github/ffffff # Name: link || icon
       Bilibili: https://space.bilibili.com/76034817 || https://cdn.simpleicons.org/bilibili/00A1D6
       MakerWorld: https://makerworld.com.cn/zh/@sunny_robo/upload || https://cdn.simpleicons.org/bambulab/00AE42
   # --------------------------- end ---------------------------
@@ -287,7 +287,7 @@ post:
   # Reward
   # 打赏
   award:
-    enable: true
+    enable: false
     appreciators: /about/ # 打赏页面
     # Reward Title
     # 打赏标题
@@ -297,9 +297,9 @@ post:
     # 打赏列表
     list:
       # - name: Github Sponsor
-      #   qcode: https://s3.qjqq.cn/47/661ba900c4bc1.webp!color
+      #qcode: https://bu.dusays.com/2026/05/26/6a157e3784bc6.jpg
       #   url: https://github.com/sponsors/everfu
-      #   color: var(--efu-black)
+      #color: var(--efu-black)
 
   # Share icon
   # 分享图标
@@ -465,7 +465,7 @@ mermaid: false
 
 # --------------------------- start ---------------------------
 # Chart.js
-chart: false
+chart: true
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------
@@ -753,10 +753,13 @@ extends:
     - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4967700_xabtq2b2yvk.css">
     # 字体
     - <link rel="stylesheet" href="/css/fonts.css">
+    # 51.la统计
+    - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+    - <script>LA.init({id:"3Q3ezaK9JWZKfLpr",ck:"3Q3ezaK9JWZKfLpr"})</script>
       # Insert in body
   # 插入到 body
   body:
-  #  - <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/pace.min.js"></script>
+    #  - <script src="https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/pace.min.js"></script>
 # --------------------------- end ---------------------------
 
 # --------------------------- start ---------------------------
@@ -779,7 +782,7 @@ pwa:
 comment:
   # Which commenting system to use(e.g. waline or waline,twikoo)
   # 使用哪个评论系统（例如： waline or waline,twikoo）
-  use: # waline, twikoo, valine, artalk, giscus # Up to two comment systems can be turned on at the same time
+  use: waline # waline, twikoo, valine, artalk, giscus # Up to two comment systems can be turned on at the same time
   # Whether to display the hot comment switch.
   # 是否显示热门评论开关
   commentBarrage: false
@@ -817,9 +820,18 @@ twikoo: # https://twikoo.js.org/
   option: # twikoo option
 # Waline: https://solitude.js.org/configuration/comment/waline
 waline: # https://waline.js.org/
-  envId: # url: https://waline.wzsco.top
-  pageview: false # Whether to enable page access statistics
+  envId: https://waline-ho0lgvo96-suncraft3d.vercel.app/ # url: https://waline.wzsco.top
+  pageview: false # 是否启用页面访问统计
   option: # waline configuration item
+    placeholder: 欢迎留下脚印～
+    login: ["qq", "wechat", "github"]
+    meta: ["nick", "mail"]
+    lang: zh-CN
+    emoji:
+      - https://unpkg.com/@waline/emojis@1.4.0/bilibili
+      - https://unpkg.com/@waline/emojis@1.4.0/qq
+      - https://unpkg.com/@waline/emojis@1.4.0/bmoji
+
 # Valine: https://solitude.js.org/configuration/comment/valine
 valine:
   appId: # leancloud application app id
